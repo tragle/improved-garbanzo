@@ -3,11 +3,16 @@
  * For a full list of MSAL.js configuration parameters, visit:
  * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/configuration.md 
  */
+
+const clientId = process.env.CLIENT_ID;
+const authority = process.env.AUTHORITY;
+const redirectUri = process.env.REDIRECT_URI;
+
 const msalConfig = {
     auth: {
-        clientId: "a7ed01a4-82c3-4f0d-8a32-ea97bc169d2e",
-        authority: "https://login.microsoftonline.com/79f98e4e-5d13-4d9b-a03c-5af34299ad4a",
-        redirectUri: "https://wonderful-bay-0898ca410.azurestaticapps.net/",
+        clientId,
+        authority,
+        redirectUri,
     },
     cache: {
         cacheLocation: "sessionStorage", // This configures where your cache will be stored
