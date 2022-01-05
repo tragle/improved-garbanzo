@@ -4,6 +4,8 @@
  * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/configuration.md 
  */
 
+console.log('loading config');
+
 const clientId = process.env.CLIENT_ID;
 const authority = process.env.AUTHORITY;
 const redirectUri = process.env.REDIRECT_URI;
