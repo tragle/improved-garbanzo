@@ -18,12 +18,12 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
-      - name: create env file
-        run: |
-          echo "Setting environment variables"
-          export CLIENT_ID=${{ secrets.CLIENT_ID }}
-          export AUTHORITY=${{ secrets.AUTHORITY }}
-          export REDIRECT_URI=${{ secrets.REDIRECT_URI }}
+#       - name: create env file
+#         run: |
+#           echo "Setting environment variables"
+#           export CLIENT_ID=${{ secrets.CLIENT_ID }}
+#           export AUTHORITY=${{ secrets.AUTHORITY }}
+#           export REDIRECT_URI=${{ secrets.REDIRECT_URI }}
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
