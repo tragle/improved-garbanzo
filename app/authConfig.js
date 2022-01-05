@@ -7,6 +7,9 @@
 const clientId = process.env.CLIENT_ID;
 const authority = process.env.AUTHORITY;
 const redirectUri = process.env.REDIRECT_URI;
+const hello = process.env.hello;
+
+console.log('hello', hello);
 
 const msalConfig = {
     auth: {
